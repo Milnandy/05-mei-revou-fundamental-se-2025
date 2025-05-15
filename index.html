@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>moqups</title>
+</head>
+<body>
+    <!-- nav bar -->
+     <!-- logo,namaLogo,nav/(hamburger),header(transparent,opacity) -->
+    <header>
+        <nav class="nav">
+            <div class="nav-logo">
+                <img src="img/logo.png" alt="logo"/>
+            </div>
+            <a href="javascript:void(0);" class="icon" id="hamburger" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home">Home</a>
+                <a href="#our-package">Package</a>
+                <a href="#about-us">About Us</a>
+                <a href="#call-us" id="nav-button">Go Now!</a>
+            </div>
+        </nav>
+        <ul class="dropdown">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#our-package">Package</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#call-us">Go Now!</a></li>
+        </ul>
+
+    </header>
+
+    <main>
+        <!-- home section -->
+        <!-- autoSlide,Quote(center),dot(onBot,mark) -->
+        <section class="section" id="home">
+            <div class="container1 my-content display-container">
+                <img class="slides1" src="img/home1.webp"/>
+                <img class="slides1" src="img/home2.jpeg"/>
+                <img class="slides1" src="img/home3.jpeg"/>
+                <img class="slides1" src="img/home4.jpg"/>
+                
+                <div class="swipe1 w3-center w3-container w3-section w3-large w3-text-white display-bottommiddle" style="width:100%">
+                    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                    <span class="slides1-mark w3-badge w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                    <span class="slides1-mark w3-badge w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                    <span class="slides1-mark w3-badge w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+                    <span class="slides1-mark w3-badge w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us -->
+        <!-- pamerKeunggulan,mengapaHarusIni -->
+        <section class="section" id="about-us">
+            <div class="container2">
+                <div class="upper-about-us">
+                    <div class="card1">
+                        <h1>Beragam Pilihan Spot Trip Terbaik</h1>
+                        <p>Ada banyak pilihan lokasi terbaik dengan
+                            rute terlengkap untuk memberikan pengalaman
+                            terbaik dalam perjalananmu. Segera pesan tiketnya
+                            sekarang!
+                        </p>
+                    </div>
+                    <div class="card1">
+                        <img src="img/logo.png" alt="gambar"/>
+                    </div>
+                </div>
+                <div class="lower-about-us">
+                    <div class="card2">
+                        <div class="logo-container">
+                            <img src="img/booking.png" alt="pict" class="avatar" />
+                            <a href="https://www.flaticon.com/free-icons/booking" title="Booking icons">
+                                Booking icons created by Freepik - Flaticon
+                            </a>
+                        </div>
+                        <div class="text-container">
+                            <strong>Praktis, Bisa Langsung Pesan</strong>
+                            <p>Beli tiket bus dan travel kapan saja dan dari 
+                                mana saja dengan Traveloka. Tak perlu repot ke 
+                                terminal atau kantor agen, sekarang Anda bisa 
+                                beli tiket dengan mudah dari rumah.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <div class="text-container">
+                            <strong>Customer Service 24 Jam</strong>
+                            <p>Kami menyediakan layanan Customer Service 24 jam. 
+                                Jadi, kapan pun Anda punya pertanyaan, langsung 
+                                telepon, chat, atau kirimkan pesan melalui 
+                                CS Japan Travel. Kami akan selalu siap 
+                                membantu.
+                            </p>
+                        </div>
+                        <div class="logo-container">
+                            <img src="img/support.png" alt="pict" class="avatar" />
+                            <a href="https://www.flaticon.com/free-icons/customer-support" title="customer support icons">
+                                Customer support icons created by Freepik - Flaticon
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <div class="logo-container">
+                            <img src="img/pricing.png" alt="pict" class="avatar" />
+                            <a href="https://www.flaticon.com/free-icons/pricing" title="pricing icons">
+                                Pricing icons created by monkik - Flaticon
+                            </a>
+                        </div>
+                        <div class="text-container">
+                            <strong>Info Lengkap</strong>
+                            <p>Mulai dari info jadwal bus dan travel, trayek, 
+                                titik berangkat dan turun, dan biaya tiket, 
+                                hingga foto dan fasilitasnya, semuanya bisa 
+                                ditemukan di Japan Travel untuk membantu Anda 
+                                memilih transportasi dan travel terbaik.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Package -->
+        <!-- maps(hover,changeColor,changeAutoSlide),autoSlide(left30%?,explanationOnBot) -->
+        <section class="section" id="our-package">
+            <div class="upper-package">
+                <div class="card3">
+                    <img src="img/hokkaido1.jpeg" alt="pict" class="sample-image" />
+                    <div class="text-container1">
+                        <strong>Hokkaido</strong>
+                        <p>Rp 8.5 Jt</p>
+                    </div>
+                    <p>Travel dan wisata di Hokkaido kunjungi cagar budaya 
+                        dan kuliner yang menarik
+                    </p>
+                </div>
+                <div class="card3">
+                    <img src="img/tohoku1.jpg" alt="pict" class="sample-image" />
+                    <div class="text-container1">
+                        <strong>Tohoku</strong>
+                        <p>Rp 7 Jt</p>
+                    </div>
+                    <p>Travel dan wisata di Tohoku kunjungi cagar budaya 
+                        dan kuliner yang menarik
+                    </p>
+                </div>
+                <div class="card3">
+                    <img src="img/kanto1.jpg" alt="pict" class="sample-image" />
+                    <div class="text-container1">
+                        <strong>Kanto</strong>
+                        <p>Rp 6.5 Jt</p>
+                    </div>
+                    <p>Travel dan wisata di kanto kunjungi cagar budaya 
+                        dan kuliner yang menarik
+                    </p>
+                </div>
+            </div>
+            <div class="lower-package">
+                <div class="card3">
+                    <img src="img/tokai1.webp" alt="pict" class="sample-image" />
+                    <div class="text-container1">
+                        <strong>Tokai</strong>
+                        <p>Rp 5.8 Jt</p>
+                    </div>
+                    <p>Travel dan wisata di Tokai kunjungi cagar budaya 
+                        dan kuliner yang menarik
+                    </p>
+                </div>
+                <div class="card3">
+                    <img src="img/kansai1.jpg" alt="pict" class="sample-image" />
+                    <div class="text-container1">
+                        <strong>Kansai</strong>
+                        <p>Rp 5.5 Jt</p>
+                    </div>
+                    <p>Travel dan wisata di Kansai kunjungi cagar budaya 
+                        dan kuliner yang menarik
+                    </p>
+                </div>
+                <div class="card3">
+                    <img src="img/kyushu2.webp" alt="pict" class="sample-image" />
+                    <div class="text-container1">
+                        <strong>Kyushu</strong>
+                        <p>Rp 6.5 Jt</p>
+                    </div>
+                    <p>Travel dan wisata di Kyushu kunjungi cagar budaya 
+                        dan kuliner yang menarik
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call Us -->
+        <!-- button(popUp,ValidationNotif),backgroundPersuasif -->
+        <section id="call-us">
+            <h1>Ayo Pergi Berlibur Ke Jepang</h1>
+            <blockquote>"Travel brings power and love back into your life"</blockquote>
+            <form action=""  method="post" id="call-to-action">
+                <button type="submit" id="button-call">Go Now!</button>
+            </form>
+            <div class="left-bottom3">
+                <hr class="separator3"/>
+            </div>
+        </section>
+
+        <div id="popup-form" class="popup-form">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+                <h2>Form Pemesanan</h2>
+                <form id="form-popup" onsubmit="return submitForm(event)">
+                <label for="fullname">Nama Lengkap:</label>
+                <input type="text" id="fullname" name="fullname" required />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="kota">Pilih Perfektur Tujuan:</label>
+                <select id="kota" name="kota" required>
+                    <option value="">-- Pilih Perfektur --</option>
+                    <option value="Hokkaid">Hokkaido</option>
+                    <option value="Tohoku">Tohoku</option>
+                    <option value="Kanto">Kanto</option>
+                    <option value="Tokai">Tokai</option>
+                    <option value="Kansai">Kansai</option>
+                    <option value="Kyushu">Kyushu</option>
+                </select>
+
+                <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="nav-logo2">
+            <img src="img/logo.png" alt="logo"/>
+        </div>
+        <div class="footer-links">
+            <p>Terms of Service &nbsp; Privacy Policy</p>
+        </div>
+        <div class="footer-copyright">© 2025 Japan Travel</div>
+    </footer>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

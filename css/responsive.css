@@ -1,0 +1,34 @@
+@media (min-width: 769px) {
+    .dropdown{
+        display: none;
+    }
+}
+@media (max-width: 768px){
+    /* navigation bar */
+    .nav a.icon {
+        float: right;
+        display: block;
+    }
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #fff;
+        padding: 10px 0;
+        gap: 6px;
+    }
+    .nav-toggle {
+        display: block;
+    }
+    .nav-menu.show {
+        display: flex;
+    }
+
+    /* about us */
+    .upper-about-us{
+        flex-direction: column;
+    }
+
+
+}
